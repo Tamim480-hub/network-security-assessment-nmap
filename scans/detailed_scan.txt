@@ -1,0 +1,56 @@
+# Nmap 7.991 scan initiated Thu Nov 26 09:00:01 2026 as: /usr/lib/nmap/nmap -sS -sV -O -p- -oN scans/detailed_scan.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00014s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+45131/tcp open  http    Golang net/http server
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port45131-TCP:V=7.991%I=7%D=11/26%Time=6B083B67%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,8F,"HTTP/1\.0\x20404\x20Not\x20Found\r\nDat
+SF:e:\x20Thu,\x2026\x20Nov\x202026\x2014:00:07\x20GMT\r\nContent-Length:\x
+SF:2019\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n404:\x20Pa
+SF:ge\x20Not\x20Found")%r(HTTPOptions,8F,"HTTP/1\.0\x20404\x20Not\x20Found
+SF:\r\nDate:\x20Thu,\x2026\x20Nov\x202026\x2014:00:07\x20GMT\r\nContent-Le
+SF:ngth:\x2019\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n404
+SF::\x20Page\x20Not\x20Found")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnectio
+SF:n:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nC
+SF:onnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20c
+SF:harset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(F
+SF:ourOhFourRequest,8F,"HTTP/1\.0\x20404\x20Not\x20Found\r\nDate:\x20Thu,\
+SF:x2026\x20Nov\x202026\x2014:00:23\x20GMT\r\nContent-Length:\x2019\r\nCon
+SF:tent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n404:\x20Page\x20Not\x
+SF:20Found")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x20400\x20Bad\x20Requ
+SF:est\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20
+SF:close\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConne
+SF:ction:\x20close\r\n\r\n400\x20Bad\x20Request")%r(OfficeScan,A3,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header\r
+SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close
+SF:\r\n\r\n400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header
+SF:");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.991%E=4%D=11/26%OT=45131%CT=1%CU=36991%PV=Y%DS=0%DC=L%G=Y%TM=6B
+OS:083B88%P=x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=107%TI=Z%CI=Z%TS=22)SE
+OS:Q(SP=103%GCD=1%ISR=10B%TI=Z%CI=Z%TS=21)SEQ(SP=105%GCD=1%ISR=10A%TI=Z%CI=
+OS:Z%TS=21)SEQ(SP=106%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=21)SEQ(SP=FE%GCD=1%IS
+OS:R=10A%TI=Z%CI=Z%TS=21)OPS(O1=MFFD7ST11NWA%O2=MFFD7ST11NWA%O3=MFFD7NNT11N
+OS:WA%O4=MFFD7ST11NWA%O5=MFFD7ST11NWA%O6=MFFD7ST11)WIN(W1=FFCB%W2=FFCB%W3=F
+OS:FCB%W4=FFCB%W5=FFCB%W6=FFCB)ECN(R=Y%DF=Y%T=40%W=FFD7%O=MFFD7NNSNWA%CC=Y%
+OS:Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40
+OS:%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q
+OS:=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A
+OS:=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R
+OS:UCK=G%RUD=G)IE(R=N)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 26 09:00:40 2026 -- 1 IP address (1 host up) scanned in 39.21 seconds
